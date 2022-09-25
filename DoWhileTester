@@ -6,5 +6,16 @@ public class WhileFlagTester
     {
         Scanner in = new Scanner(System.in);
         
+        boolean authGranted = false;
+        do
+        {
+            System.out.println("Enter password: ");
+            String answer = in.next();
+            if (answer.equals("apple") )
+            {
+                authGranted = true;
+                System.out.println("ACCESS GRANTED");
+            }
+        }while(!authGranted);
     }
 }
