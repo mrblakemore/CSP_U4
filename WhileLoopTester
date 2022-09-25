@@ -1,0 +1,161 @@
+public class WhileLoopTester
+{
+    //SKILL 1: Loop Up
+    public static String count1To5()
+    {
+        String output = "";
+        int i = 1;
+        while(i <= 5)
+        {
+            output += i + " ";
+            i++;
+        }
+        return output;
+    }
+    
+    //SKILL 1: Loop Up
+    public static String count0To10()
+    {
+        String output = "";
+        int i = 0;
+        while(i <= 10)
+        {
+            output += i + " ";
+            i++;
+        }
+        return output;
+    }
+    
+    public static String count1ToValue(int value)
+    {
+        String output = "";
+        int i = 0;
+        while(i <= value)
+        {
+            output += i + " ";
+            i++;
+        }
+        return output;
+    }
+    
+    public static String countStartToEnd(int start, int end)
+    {
+        String output = "";
+        int i = start;
+        while(i <= end)
+        {
+            output += i + " ";
+            i++;
+        }
+        return output;
+    }
+    
+    
+    
+    public static String runUntilNumber7()
+    {
+        int random = (int)(Math.random() * 12) + 1;
+        String output = random + " ";
+        while(random != 7)
+        {
+            random = (int)(Math.random() * 12) + 1;
+            output += random + " ";
+        }
+        return output;
+    }
+    
+    public static String runUntilDivisibleBy10()
+    {
+        int random = (int)(Math.random() * 100);
+        String output = random + " ";
+        while(random % 10 != 0)
+        {
+            random = (int)(Math.random() * 100);
+            output += random + " ";
+        }
+        return output;
+    }
+    
+    public static String runUntilDivisibleByValue(int value)
+    {
+        int random = (int)(Math.random() * 100);
+        String output = random + " ";
+        while(random % value != 0)
+        {
+            random = (int)(Math.random() * 100);
+            output += random + " ";
+        }
+        return output;
+    }
+    
+    // public static String runUntilNumberReachesLimit(int limit)
+    // {
+        // String output = " ";
+        // int total = 0;
+        // while(total <= limit)
+        // {
+            // int itemsSold = (int)(Math.random() * 2) + 1;
+            // if( (limit - total) 
+            // total += itemsSold;
+            // output += itemsSold + " ";
+        // }
+        // return output;
+    // }
+    
+    
+    //ERRORS----------------------------
+    //Output 5 - 10
+    public static String error1()
+    {
+        String output = "";
+        int i = 5;  //delete to make error
+        while(i <= 10)
+        {
+            output += i + " ";
+            i++;
+        }
+        return output;
+    }
+    
+    //Output 10 - 5
+    public static String error2()
+    {
+        String output = "";
+        int i = 10;
+        while(i >= 5)
+        {
+            output += i + " ";
+            i--;   //switch to i++ to make error
+        }
+        return output;
+    }
+    
+    //Output 1 - 5
+    public static String error3()
+    {
+        String output = "";
+        int i = 1;
+        while(i <= 5)
+        {
+            output += i + " ";
+            i++;  //delete to make error
+        }
+        return output;
+    }
+
+    
+    public static void main(String[] args)
+    {
+        System.out.println(count1To5());
+        System.out.println(count0To10());
+        System.out.println(count1ToValue(14));
+        System.out.println(countStartToEnd(5,15));
+        System.out.println(runUntilNumber7());
+        System.out.println(runUntilDivisibleBy10());
+        System.out.println(runUntilDivisibleByValue(6));
+        System.out.println(error1());
+        System.out.println(error2());
+        System.out.println(error3());
+    }
+    
+}
