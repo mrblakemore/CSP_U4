@@ -1,0 +1,138 @@
+
+public class ForLoopTester
+{
+    public static String count1To10()
+    {
+        String output = "";
+        for (int i = 1; i <= 10; i++)
+        {
+            output += i + " ";
+        }
+        return output; 
+    }
+    
+    public static String count1To31()
+    {
+        String output = "";
+        for (int i = 1; i <= 31; i++)
+        {
+            output += i + " ";
+        }
+        return output; 
+    }
+    
+    
+    public static String count70To100()
+    {
+        String output = "";
+        for (int i = 70; i <= 100; i++)
+        {
+            output += i + " ";
+        }
+        return output; 
+    }
+    
+    public static String count1ToValue(int value)
+    {
+        String output = "";
+        for (int i = 1; i <= value; i++)
+        {
+            output += i + " ";
+        }
+        return output; 
+    }
+    
+    public static String countStartToEnd(int start, int end)
+    {
+        String output = "";
+        for (int i = start; i <= end; i++)
+        {
+            output += i + " ";
+        }
+        return output; 
+    }
+    
+    public static String countBy10ToEnd(int end)
+    {
+        String output = "";
+        for (int i = 0; i <= end; i+=10)
+        {
+            output += i + " ";
+        }
+        return output; 
+    }
+    
+    public static String countBy2ToEnd(int end)
+    {
+        String output = "";
+        for (int i = 0; i <= end; i+=2)
+        {
+            output += i + " ";
+        }
+        return output; 
+    }
+    
+    public static String countOnlyEven(int start, int end)
+    {
+        String output = "";
+        for (int i = start; i <= end; i++)
+        {
+            if(i % 2 == 0)
+            {
+                output += i + " ";
+            }
+        }
+        return output; 
+    }
+    
+    
+    public static String countOnlyOdd(int start, int end)
+    {
+        String output = "";
+        for (int i = start; i <= end; i++)
+        {
+            if(i % 2 == 1)
+            {
+                output += i + " ";
+            }
+        }
+        return output; 
+    }
+    
+    public static String countDown()
+    {
+        String output = "";
+        for (int i = 10; i >= 0; i--)
+        {
+            output += i + " ";
+        }
+        return output; 
+    }
+    
+    public static String countDownFromStart(int start)
+    {
+        String output = "";
+        for (int i = start; i >= 0; i--)
+        {
+            output += i + " ";
+        }
+        return output; 
+    }
+    
+    
+    public static void main(String[] args)
+    {
+        System.out.println(count1To10());
+        System.out.println(count1To31());
+        System.out.println(count70To100());
+        System.out.println(count1ToValue(43));
+        System.out.println(countStartToEnd(4,8));
+        System.out.println(countBy10ToEnd(60));
+        System.out.println(countBy2ToEnd(14));
+        System.out.println(countOnlyEven(1, 15));
+        System.out.println(countOnlyOdd(2, 12));
+        System.out.println(countDown());
+        System.out.println(countDownFromStart(14));
+    }
+}
+
