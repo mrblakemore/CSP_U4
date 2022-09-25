@@ -5,8 +5,9 @@ public class WhileFlagTester
     public static void main(String[] args)
     {
         Scanner in = new Scanner(System.in);
+        int numberOfTries = 1;
         
-        boolean authGranted = false;
+        boolean authGranted = false; 
         do
         {
             System.out.println("Enter password: ");
@@ -16,6 +17,20 @@ public class WhileFlagTester
                 authGranted = true;
                 System.out.println("ACCESS GRANTED");
             }
+            else
+            {
+                if(numberOfTries < 3)
+                {
+                    System.out.println("Wrong Password. Try again");
+                    numberOfTries++;
+                }
+                else
+                {
+                    System.out.println("ACCESS DENIED");
+                    break;
+                }
+            }
         }while(!authGranted);
+  
     }
 }
