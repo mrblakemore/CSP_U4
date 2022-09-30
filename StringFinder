@@ -1,0 +1,33 @@
+public class StringFinder
+{
+    public static boolean hasA(String word)
+    {
+        return word.indexOf("a") >= 0;
+    }
+    
+    public static boolean hasEr(String word)
+    {
+        return word.indexOf("er") >= 0;
+    }
+    
+    public static boolean hasIng(String word)
+    {
+        return word.indexOf("ing") >= 0;
+    }
+    
+    public static boolean noY(String word)
+    {
+        return word.indexOf("y") == -1;
+    }
+    
+    public static boolean noEd(String word)
+    {
+        return word.indexOf("ed") == -1;
+    }
+    
+    public static boolean hasRootWord(String word, String root)
+    {
+        return word.indexOf(root) >= 0;
+    }
+    
+}
