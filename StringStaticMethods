@@ -1,0 +1,44 @@
+
+
+public class StringStaticMethods
+{
+    public static String firstLetter(String word)
+    {
+        return word.substring(0,1);
+    }
+    
+    public static String first2Letters(String word)
+    {
+        return word.substring(0,2);
+    }
+    
+    public static String first3Letters(String word)
+    {
+        return word.substring(0,3);
+    }
+    
+    public static String lastLetter(String word)
+    {
+        int length = word.length();
+        return word.substring(length - 1);
+    }
+    
+    public static String last2Letters(String word)
+    {
+        int length = word.length();
+        return word.substring(length - 2);
+    }
+    
+    public static String firstHalf(String word)
+    {
+        int mid = word.length() / 2;
+        return word.substring(0, mid);
+    }
+    
+    public static String lastHalf(String word)
+    {
+        int mid = word.length() / 2;
+        return word.substring(mid);
+    }
+    
+}
