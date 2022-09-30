@@ -1,0 +1,42 @@
+public class StringLoops
+{
+    public static String spaceEachLetter(String word)
+    {
+        String output = "";
+        for (int i = 0; i < word.length(); i++)
+        {
+            String letter = word.substring(i, i+1);
+            output += letter + " ";
+        }
+        return output;
+    }
+    
+    public static int countLetterA(String word)
+    {
+        int count = 0;
+        for (int i = 0; i < word.length(); i++)
+        {
+            String letter = word.substring(i, i+1);
+            if(letter.equals("a") ) 
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+    
+    public static String waveCase(String word)
+    {
+        String output = "";
+        for (int i = 0; i < word.length(); i++)
+        {
+            String output = word.substring(i, i+1);
+            output += letter;
+        }
+        return count;
+    }
+    
+    
+    
+    
+}
