@@ -25,22 +25,37 @@ public class StringFinder
         return word.indexOf("ed") == -1;
     }
     
-    public static boolean hasRootWord(String word, String root)
+    public static String splitAtSpace(String word)
     {
-        return word.indexOf(root) >= 0;
+        int stop = word.indexOf(" ");
+        return word.substring(0, stop);
     }
     
-    
-    
+    public static String splitAtComma(String word)
+    {
+        int stop = word.indexOf(",");
+        return word.substring(0, stop);
+    }
+
     public static void main(String[] args)
     {
         System.out.println("apple hasA: " + hasA("apple"));
         System.out.println("happier hasEr: " + hasEr("happier"));
         System.out.println("grape hasIng: " + hasIng("grape"));
+        //add your 2 versions
+        
+        
         System.out.println("year noY: " + noY("year"));
         System.out.println("apple noEd: " + noEd("apple"));
-        System.out.println("friendly hasRootWord: " + hasRootWord("friendly", "friend"));
-
+        //add your 2 versions
+        
+        
+        System.out.println(splitAtSpace("Tony Stark"));
+        System.out.println(splitAtComma("red, blue, green"));
+        //add your 2 versions
+        
+    
+        
     }
     
 }
