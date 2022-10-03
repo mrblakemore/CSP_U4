@@ -41,4 +41,28 @@ public class StringStaticMethods
         return word.substring(mid);
     }
     
+    public static String customStart(String word, int start)
+    {
+        return word.substring(start);
+    }
+    
+    public static String customFromEnd(String word, int end)
+    {
+        int length = word.length();
+        return word.substring(0, length - end);
+    }
+    
+    public static void main(String[] args)
+    {
+        System.out.println(firstLetter("apple"));
+        System.out.println(first2Letters("orange"));
+        System.out.println(first3Letters("grape"));
+        System.out.println(lastLetter("apple"));
+        System.out.println(last2Letters("orange"));
+        System.out.println(firstHalf("apple"));
+        System.out.println(lastHalf("orange"));
+        System.out.println(customStart("yellow", 3));
+        System.out.println(customFromEnd("purple", 2));
+    }
+    
 }
