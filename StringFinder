@@ -30,4 +30,17 @@ public class StringFinder
         return word.indexOf(root) >= 0;
     }
     
+    
+    
+    public static void main(String[] args)
+    {
+        System.out.println("apple hasA: " + hasA("apple"));
+        System.out.println("happier hasEr: " + hasEr("happier"));
+        System.out.println("grape hasIng: " + hasIng("grape"));
+        System.out.println("year noY: " + noY("year"));
+        System.out.println("apple noEd: " + noEd("apple"));
+        System.out.println("friendly hasRootWord: " + hasRootWord("friendly", "friend"));
+
+    }
+    
 }
