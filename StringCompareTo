@@ -1,0 +1,35 @@
+public class StringCompareTo
+{
+    
+    public static String whichComesFirst(String word1, String word2)
+    {
+        String output = "";
+        if(word1.compareTo(word2) < 0)
+        {
+            output = word1 + " comes before " + word2;
+        }
+        else if(word1.compareTo(word2) > 0)
+        {
+            output = word2 + " comes before " + word1;
+        }
+        else if(word1.compareTo(word2) == 0)
+        {
+            output = word1 + " is the same as " + word2;
+        }
+        return output;
+    }
+    public static void main(String[] args)
+    {
+        System.out.println(whichComesFirst("apple", "orange"));
+        System.out.println(whichComesFirst("orange", "apple"));
+        System.out.println(whichComesFirst("apple", "orange"));
+        System.out.println(whichComesFirst("ORANGE", "car"));
+        System.out.println(whichComesFirst("APPLE", "apple"));
+        
+        System.out.println(whichComesFirst("car", "cat"));
+        System.out.println(whichComesFirst("cat", "car"));
+        System.out.println(whichComesFirst("car", "car"));
+        System.out.println(whichComesFirst("CAT", "car"));
+        System.out.println(whichComesFirst("CAT", "cat"));
+    }
+}
